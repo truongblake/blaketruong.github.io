@@ -30,7 +30,6 @@ nav{
     transition: all 0.5s ease;
     margin: 10px 0 0 0px;
     padding-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .myname ion-icon{
     width:45px;
@@ -40,7 +39,8 @@ nav{
 .myname span{
     font-weight: bold;
     padding-left: 15px;
-    font-size: 18px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     text-transform:uppercase;
 }
 a{
@@ -50,7 +50,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: left;
-    width: 300px;
+    width: 280px;
     padding: 10px;
 }
 
@@ -71,7 +71,8 @@ a{
     font-family: Arial, Helvetica, sans-serif;
 }
 a:hover{
-    border-radius: 10px;
+    transition: 0.5s;
+    border-radius: 50px;
     background: lightslategray;
 }
 nav:hover{
@@ -82,4 +83,8 @@ nav:hover{
 .settings{
     position: absolute;
     bottom: 0;
+}
+.active{
+    background: lightslategray;
+    border-radius: 50px;
 }
