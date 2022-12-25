@@ -5,15 +5,12 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-body{
-    background: linear-gradient(90deg, darkgray,gray);
-}
 
 nav{
-    position: absolute;
+    position: sticky;
+    height: 100vh;
     top: 0;
     bottom: 0;
-    height: 100%;
     left: 0;
     background:white;
     width: 90px;
