@@ -6,37 +6,12 @@
     background-color: white;
     min-height: 100vh;
 }
-.blakedescription{
-    display: flex;
-    overflow: hidden;
-    left:120px;
-    color: #333;
-    font-family: tahoma;
-    font-size: 34px;
-    font-weight: 100;
-    text-transform: uppercase;
-    white-space: nowrap;
-    position: relative;
-    width: 50%;
-    height: 41px;
-}
-.blakedescription span {
-    position: relative;
-    display: block;
-}
-.occupation{
-    padding-left: 10px;
-    color: black;
-    display: block;
-    position: relative;
-    animation: openclose 5s ease-in-out infinite;
-}
-
 
 .waviy{
     -webkit-box-reflect: below -20px linear-gradient(transparent,rgba(0,0,0,0.2));
     font-size: 60px;
     margin: 20px;
+    white-space: nowrap;
 }
 
 .waviy span{
@@ -47,67 +22,28 @@
     display: inline-block;
     color: black;
     text-transform: uppercase;
-    animation: waviy 1s infinite;
+    opacity: 0;
+    animation: waviy 1s forwards;
+    animation-delay: 0;
     animation-delay: calc(.1s * var(--i));
 }
 
 @keyframes waviy{
-    0%,40%,100%{
-        transform:translate(0);
+    0%{
+      opacity: 0;
+      transform: translateY(30px);
     }
-    20%{
-        transform:translateY(-20px);
+    100%{
+      opacity: 1;
     }
 }
 
-@keyframes openclose {
-    0% {
-      top: 0rem;
-    }
-    5% {
-    }
-    15% {
-    }
-    30% {
-      top: 0rem;
-    }
-    33% {
-      top: 0rem;
-    }
-    35% {
-      top: 0rem;
-    }
-    38% {
-      top: -41px;
-      
-    }
-    48% {
-      top: -41px;
-    }
-    62% {
-      top: -41px;
-    }
-    66% {
-      top: -41px;
-      text-indent: 0;
-    }
-    71% {
-      top: -81px;
-      text-indent: 5px;
-    }
-    86% {
-      top: -81px;
-      width: 285px;
-    }
-    95% {
-      top: -81px;
-    }
-    98% {
-      top: -81px;
-      text-indent: 5px;
-    }
-    100% {
-      top: 0;
-      text-indent: 0;
-    }
+@keyframes size{
+  0%{
+    font-size: 60px;
+  }
+
+  100%{
+    font-size: 80px;
+  }
 }
