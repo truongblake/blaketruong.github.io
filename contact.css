@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.section.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#contact-content{
+    display: flex;
+    flex-direction: column;
+}
+#contact-name{
+    display: flex;
+    justify-content: space-between
+}
+#contact-name div{
+    width: 45%;
+}
+
+#message-box div{
+    margin:10px 0;
+}
+
+#message, #email, #first-name, #last-name{
+    resize: none;
+    width: 100%;
+}
+
+#contact-Title{
+    font-size: 50px;
+}
+
+#contact-Title,
+#first-name,
+#last-name,
+#contact-email,
+#contact-textbox,
+#contacts{
+    opacity: 0;
+    animation: waviy 1s forwards;
+    animation-delay: calc(0.25s * var(--i));
+}
+
+@keyframes waviy{
+    0%{
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100%{
+      opacity: 1;
+    }
+}

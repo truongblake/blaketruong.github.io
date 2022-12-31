@@ -24,7 +24,6 @@
     text-transform: uppercase;
     opacity: 0;
     animation: waviy 1s forwards;
-    animation-delay: 0;
     animation-delay: calc(.1s * var(--i));
 }
 
@@ -38,12 +37,3 @@
     }
 }
 
-@keyframes size{
-  0%{
-    font-size: 60px;
-  }
-
-  100%{
-    font-size: 80px;
-  }
-}

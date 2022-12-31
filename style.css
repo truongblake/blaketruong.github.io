@@ -17,13 +17,4 @@ html{
     padding: 0;
 }
 
-.section.about{
-    background-color: lightgrey;
-}
-.section.project{
-    background-color: gray;
-}
-.section.contact{
-    background-color: black;
-}
 
