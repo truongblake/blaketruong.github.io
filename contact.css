@@ -42,10 +42,19 @@
 #last-name,
 #contact-email,
 #contact-textbox,
-#contacts{
+#contacts,
+#contact-submit{
     opacity: 0;
     animation: waviy 1s forwards;
-    animation-delay: calc(0.25s * var(--i));
+    animation-delay: calc(0.1s * var(--i));
+}
+#submit-section{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#contact-submit{
+    position: relative;
 }
 
 @keyframes waviy{
