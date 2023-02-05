@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.loading{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.loading span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 25px;
+    margin: 0 5px;
+    animation: load 2s infinite ease-in-out;
+    animation-delay: calc(1s * var(--i));
+}
+
+@keyframes load {
+    50%{
+        opacity: 0;
+        transform: scale(0.7) translateY(10px);
+    }
+}
